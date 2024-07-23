@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Craft | Bootstrap 5 HTML Admin Dashboard Theme by KeenThemes</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Craft admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets." />
+		<meta name="keywords" content="Craft, bootstrap, bootstrap 5, admin themes, dark mode, free admin themes, bootstrap admin, bootstrap dashboard" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Craft | Bootstrap 5 HTML Admin Dashboard Theme by KeenThemes" />
+		<meta property="og:url" content="https://themes.getbootstrap.com/product/craft-bootstrap-5-admin-dashboard-theme" />
+		<meta property="og:site_name" content="Craft by Keenthemes" />
+		<link rel="canonical" href="http://preview.keenthemes.comindex.html" />
+		<link rel="shortcut icon" href="../theme/assets/media/logos/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<link href="../theme/assets/plugins/custom/leaflet/leaflet.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../theme/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+	</head>
+<body class="bg-gray-100 min-h-100" >
+    <header>
+        <nav class="bg-white px-8 py-4 d-flex align-items-center justify-content-between" >
+            <div class="d-flex align-items-center gap-2 gap-lg-10" >
+                <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
+                <div>
+                    <img class="h-35px w-100px" src="https://d3jpyr6d7iubju.cloudfront.net/assets/logo-1d997c71e183ab502d28a9143fc087173ebe3c2dc97c52ae4ce46fbdf9ddbc24.svg">
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-12" >
+                    <a href="#" class="text-gray-600 fs-6" >Dashboard</a>
+                    <a href="#" class="text-gray-600 fs-6">Users</a>
+                    <a href="#" class="text-gray-600 fs-6">Orders</a>
+                    <a href="#" class="text-gray-600 fs-6">Buyers</a>
+                    <div>
+                        <div class="d-flex align-items-center" id="kt_header_user_menu_toggle">
+                            <div class="text-gray-600 fs-6 d-flex align-items-center gap-4 cursor-pointer" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
+                                <span>Finance</span>
+                                <img src="./assets/chevron-down.svg" width="12" height="12" >
+                            </div>
+                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                                <div class="menu-item px-5">
+                                    <a href="account/settings.html" class="menu-link px-5">Transactions</a>
+                                </div>
+                                <div class="menu-item px-5">
+                                    <a href="account/settings.html" class="menu-link px-5">Payouts</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center ms-2 ms-lg-3" id="kt_header_user_menu_toggle">
+                    <div class="cursor-pointer symbol symbol-35px symbol-lg-35px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                        <img alt="Pic" src="../theme/assets/media/avatars/300-1.jpg" />
+                    </div>
+                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                        <div class="menu-item px-3">
+                            <div class="menu-content d-flex align-items-center px-3">
+                                <div class="symbol symbol-50px me-5">
+                                    <img alt="Logo" src="../theme/assets/media/avatars/300-1.jpg" />
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold d-flex align-items-center fs-5">Max Smith</div>
+                                    <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">max@kt.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator my-2"></div>
+                        <div class="menu-item px-5">
+                            <a href="account/settings.html" class="menu-link px-5">Account Settings</a>
+                        </div>
+                        <div class="menu-item px-5">
+                            <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="min-h-100" >
+        <div class="py-8 px-10" >
+            <h1 class="text-gray-900 fw-bold my-1 fs-2">Import Orders</h1>
+        </div>
+        <div class="bg-white rounded-top-4 min-h-100 p-10 mx-lg-10" >
+            <div>
+                <h1 class="text-gray-900 fw-bold my-1 fs-3">Map Column Headers</h1>
+                <p class="text-gray-600 fs-6 fw-normal mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, repudiandae</p>
+            </div>
+            <div class="table-responsive" >
+                <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table">
+                   <thead>
+                    <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0" >
+                        <th class="border-b border-gray-300 min-w-125px" >
+                            <select class="bg-gray-200 form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Order Id</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-175px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Buyer</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-100px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Payer</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Status</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Total</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-175px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Payment Type</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Weight</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-100px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Zone</option>
+                            </select>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-150px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Date Added</option>
+                            </select>
+                        </th>
+                    </tr>
+                        <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
+                            <th class="border-b border-gray-300 min-w-100px">Order No</th>
+                            <th class="border-b border-gray-300 min-w-175px">Buyer</th>
+                            <th class="border-b border-gray-300 min-w-70px">Payer</th>
+                            <th class="border-b border-gray-300 min-w-100px">Status</th>
+                            <th class="border-b border-gray-300 min-w-100px">Total</th>
+                            <th class="border-b border-gray-300 min-w-125px">Payment Type</th>
+                            <th class="border-b border-gray-300 min-w-100px">Weight</th>
+                            <th class="border-b border-gray-300 min-w-100px">Zone</th>
+                            <th class="border-b border-gray-300 min-w-100px">Date Added</th>
+                        </tr>
+                   </thead>
+                   <tbody class="fw-semibold text-gray-600">
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold py-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold py-3" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-3" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-3 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-3" data-order="Completed">
+                            <div class="badge badge-light-primary ">Order Created</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-3 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold py-3" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-3" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-3 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-3" data-order="Completed">
+                            <div class="badge badge-light-warning ">Pickup Awaiting</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-3 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-3" >
+                            07/22/2024
+                        </td>
+                    </tr>
+               </tbody>
+                </table>
+            </div>
+            <div class="d-flex align-items-center justify-content-end gap-3 mt-10" >
+                <a href="#" class="btn btn-light me-2" id="kt_user_follow_button">
+                    <span class="indicator-label">Cancel</span>
+                </a>
+                <a href="#" class="btn fs-4 btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Continue</a>
+            </div>
+        </div>
+    </main>
+    
+
+    <script> var hostUrl = "assets/"; </script>
+
+
+
+    <script>var hostUrl = "assets/";</script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="../theme/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../theme/assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="../theme/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="../theme/assets/js/custom/apps/projects/list/list.js"></script>
+    <script src="../theme/assets/js/widgets.bundle.js"></script>
+    <script src="../theme/assets/js/custom/widgets.js"></script>
+    <script src="../theme/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/type.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/budget.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/settings.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/team.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/targets.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/files.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/complete.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/main.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/users-search.js"></script>
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+
+    <script src="../theme/src/js/custom/apps/projects/list/list.js" ></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <script src="../theme/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../theme/assets/js/scripts.bundle.js"></script>
+    <script src="../theme/assets/plugins/custom/leaflet/leaflet.bundle.js"></script>
+    <script src="../theme/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <script src="../theme/assets/js/widgets.bundle.js"></script>
+    <script src="../theme/assets/js/custom/widgets.js"></script>
+    <script src="../theme/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/type.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/budget.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/settings.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/team.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/targets.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/files.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/complete.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/main.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/select-location.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/users-search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Craft | Bootstrap 5 HTML Admin Dashboard Theme by KeenThemes</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Craft admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets." />
+		<meta name="keywords" content="Craft, bootstrap, bootstrap 5, admin themes, dark mode, free admin themes, bootstrap admin, bootstrap dashboard" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Craft | Bootstrap 5 HTML Admin Dashboard Theme by KeenThemes" />
+		<meta property="og:url" content="https://themes.getbootstrap.com/product/craft-bootstrap-5-admin-dashboard-theme" />
+		<meta property="og:site_name" content="Craft by Keenthemes" />
+		<link rel="canonical" href="http://preview.keenthemes.comindex.html" />
+		<link rel="shortcut icon" href="../theme/assets/media/logos/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<link href="../theme/assets/plugins/custom/leaflet/leaflet.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../theme/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+	</head>
+<body class="bg-gray-100 min-h-100" >
+    <header>
+        <nav class="bg-white px-8 py-4 d-flex align-items-center justify-content-between" >
+            <div class="d-flex align-items-center gap-2 gap-lg-10" >
+                <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
+                <div>
+                    <img class="h-35px w-100px" src="https://d3jpyr6d7iubju.cloudfront.net/assets/logo-1d997c71e183ab502d28a9143fc087173ebe3c2dc97c52ae4ce46fbdf9ddbc24.svg">
+                </div>
+                <div class="d-none d-lg-flex align-items-center gap-12" >
+                    <a href="#" class="text-gray-600 fs-6" >Dashboard</a>
+                    <a href="#" class="text-gray-600 fs-6">Users</a>
+                    <a href="#" class="text-gray-600 fs-6">Orders</a>
+                    <a href="#" class="text-gray-600 fs-6">Buyers</a>
+                    <div>
+                        <div class="d-flex align-items-center" id="kt_header_user_menu_toggle">
+                            <div class="text-gray-600 fs-6 d-flex align-items-center gap-4 cursor-pointer" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
+                                <span>Finance</span>
+                                <img src="./assets/chevron-down.svg" width="12" height="12" >
+                            </div>
+                            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                                <div class="menu-item px-5">
+                                    <a href="account/settings.html" class="menu-link px-5">Transactions</a>
+                                </div>
+                                <div class="menu-item px-5">
+                                    <a href="account/settings.html" class="menu-link px-5">Payouts</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center ms-2 ms-lg-3" id="kt_header_user_menu_toggle">
+                    <div class="cursor-pointer symbol symbol-35px symbol-lg-35px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                        <img alt="Pic" src="../theme/assets/media/avatars/300-1.jpg" />
+                    </div>
+                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                        <div class="menu-item px-3">
+                            <div class="menu-content d-flex align-items-center px-3">
+                                <div class="symbol symbol-50px me-5">
+                                    <img alt="Logo" src="../theme/assets/media/avatars/300-1.jpg" />
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="fw-bold d-flex align-items-center fs-5">Max Smith</div>
+                                    <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">max@kt.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator my-2"></div>
+                        <div class="menu-item px-5">
+                            <a href="account/settings.html" class="menu-link px-5">Account Settings</a>
+                        </div>
+                        <div class="menu-item px-5">
+                            <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="min-h-100" >
+        <div class="py-8 px-10" >
+            <h1 class="text-gray-900 fw-bold my-1 fs-2">Import Orders</h1>
+        </div>
+        <div class="bg-white rounded-4 py-5 px-5 px-lg-10 mx-5 mx-lg-10" >
+            <div class="d-flex align-items-center justify-content-between w-100" > 
+                <h1 class="text-gray-900 fw-bold my-1 fs-3">Imported Orders</h1>
+                <div class="d-none d-lg-block nav-group bg-white" data-kt-buttons="true">
+                    <button class="fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2 active" data-kt-plan="month">
+                        <span class="fs-7" >Total</span>
+                        <span class="fs-7" >12</span>
+                    </button>
+                    <button class="mx-1 fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
+                        <span class="fs-7" >Valid Orders</span>
+                        <span class="fs-7" >12</span>
+                    </button>
+                    <button class="fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
+                        <span class="fs-7" >Invalid Orders</span>
+                        <span class="fs-7" >0</span>
+                    </button>
+                </div>
+            </div>
+                <div class="mt-5" >
+                    <div class="alert alert-success border-dashed border-success d-flex align-items-center p-5">
+                        <i class="ki-duotone ki-shield-tick fs-2hx text-success me-4">
+                            <span class="path1"></span><span class="path2"></span>
+                        </i>
+
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-1 fs-6 text-success">All the validations passed!</h4>
+                        <span class="fs-6" >You can move to the next step.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-lg-none mt-5 bg-white rounded-4 py-5 px-5 px-lg-10 mx-5 mx-lg-10" >
+            <div class="nav-group w-75 mx-auto bg-white" data-kt-buttons="true">
+                <button class="fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2 active" data-kt-plan="month">
+                    <span class="fs-7" >Total</span>
+                    <span class="fs-7" >12</span>
+                </button>
+                <button class="mx-1 fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
+                    <span class="fs-7" >Valid Orders</span>
+                    <span class="fs-7" >12</span>
+                </button>
+                <button class="fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
+                    <span class="fs-7" >Invalid Orders</span>
+                    <span class="fs-7" >0</span>
+                </button>
+            </div>
+        </div>
+        <div class="mt-5 bg-white rounded-top-4 min-h-100 mx-lg-10" >
+            <div class="table-responsive" >
+                <table class="table align-middle table-row-dashed fs-6 gy-5">
+                    <thead>
+                         <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
+                             <th class="border-b border-gray-300 min-w-100px p-4">
+                               Order No
+                             </th>
+                             <th class="border-b border-gray-300 min-w-175px p-4">
+                               Buyer
+                             </th>
+                             <th class="border-b border-gray-300 min-w-70px p-4">Payer</th>
+                             <th class="border-b border-gray-300 min-w-100px p-4">Status</th>
+                             <th class="border-b border-gray-300 min-w-100px p-4">Total</th>
+                             <th class="border-b border-gray-300 min-w-125px p-4">Payment Type</th>
+                             <th class="border-b border-gray-300 min-w-100px p-4">Weight</th>
+                             <th class="border-b border-gray-300 min-w-100px p-4">Zone</th>
+                             <th class="border-b border-gray-300 min-w-100px p-4">Date Added</th>
+                             <td class="min-w-70px p-4" ></td>
+                             <td class="min-w-70px text-end p-4" >Actions</td>
+                         </tr>
+                    </thead>
+                    <tbody class="fw-semibold text-gray-600">
+                         <tr>
+                             <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                                 01
+                             </td>
+                             <td class="border-b border-gray-300 p-4" > 
+                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                             </td>
+                             <td class="border-b border-gray-300 p-4 text-gray-800" >
+                                 Buyer
+                             </td>
+                             <td class="border-b border-gray-300 p-4" data-order="Completed">
+                                 <div class="badge badge-light-success">Delivered</div>
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 0.00L
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 Cash
+                             </td>
+                             <td class="border-b border-gray-300 p-4 text-uppercase" >
+                                 2kg
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 Allias
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 07/22/2024
+                             </td>
+                             <td></td>
+                            <td class="text-end p-4">
+                                <a href="#" class="btn btn-sm btn-light btn-active-light-primary btn-flex btn-center" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+                                <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                    <div class="menu-item px-3">
+                                        <a href="apps/ecommerce/catalog/add-category.html" class="menu-link px-3">Edit</a>
+                                    </div>
+                                    <div class="menu-item px-3">
+                                        <a href="#" class="menu-link px-3" data-kt-ecommerce-category-filter="delete_row">Delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                         </tr>
+                         <tr>
+                             <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                                 01
+                             </td>
+                             <td class="border-b border-gray-300 p-4" > 
+                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                             </td>
+                             <td class="border-b border-gray-300 p-4 text-gray-800" >
+                                 Buyer
+                             </td>
+                             <td class="border-b border-gray-300 p-4" data-order="Completed">
+                                 <div class="badge badge-light-primary ">Order Created</div>
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 0.00L
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 Cash
+                             </td>
+                             <td class="border-b border-gray-300 p-4 text-uppercase" >
+                                 2kg
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 Allias
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 07/22/2024
+                             </td>
+                             <td class="p-4" ></td>
+                             <td class="text-end p-4">
+                                <a href="#" class="btn btn-sm btn-light btn-active-light-primary btn-flex btn-center" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+                                <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                    <div class="menu-item px-3">
+                                        <a href="apps/ecommerce/catalog/add-category.html" class="menu-link px-3">Edit</a>
+                                    </div>
+                                    <div class="menu-item px-3">
+                                        <a href="#" class="menu-link px-3" data-kt-ecommerce-category-filter="delete_row">Delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                         </tr>
+                         <tr>
+                             <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                                 01
+                             </td>
+                             <td class="border-b border-gray-300 p-4" > 
+                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                             </td>
+                             <td class="border-b border-gray-300 p-4 text-gray-800" >
+                                 Buyer
+                             </td>
+                             <td class="border-b border-gray-300 p-4" data-order="Completed">
+                                 <div class="badge badge-light-warning ">Pickup Awaiting</div>
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 0.00L
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 Cash
+                             </td>
+                             <td class="border-b border-gray-300 p-4 text-uppercase" >
+                                 2kg
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 Allias
+                             </td>
+                             <td class="border-b border-gray-300 p-4" >
+                                 07/22/2024
+                             </td>
+                             <td class="p-4" ></td>
+                             <td class="text-end p-4">
+                                <a href="#" class="btn btn-sm btn-light btn-active-light-primary btn-flex btn-center" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+                                <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                    <div class="menu-item px-3">
+                                        <a href="apps/ecommerce/catalog/add-category.html" class="menu-link px-3">Edit</a>
+                                    </div>
+                                    <div class="menu-item px-3">
+                                        <a href="#" class="menu-link px-3" data-kt-ecommerce-category-filter="delete_row">Delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                         </tr>
+                    </tbody>
+                 </table>
+            </div>
+            <div class="d-flex align-items-center justify-content-end gap-3 mt-10 me-5 me-lg-10" >
+                <a href="#" class="btn btn-light me-2" id="kt_user_follow_button">
+                    <span class="indicator-label">Cancel</span>
+                </a>
+                <a href="#" class="btn fs-4 btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Continue</a>
+            </div>
+        </div>
+    </main>
+    
+
+    <script> var hostUrl = "assets/"; </script>
+
+
+
+    <script>var hostUrl = "assets/";</script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="../theme/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../theme/assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="../theme/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="../theme/assets/js/custom/apps/projects/list/list.js"></script>
+    <script src="../theme/assets/js/widgets.bundle.js"></script>
+    <script src="../theme/assets/js/custom/widgets.js"></script>
+    <script src="../theme/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/type.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/budget.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/settings.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/team.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/targets.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/files.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/complete.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/main.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/users-search.js"></script>
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+
+    <script src="../theme/src/js/custom/apps/projects/list/list.js" ></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <script src="../theme/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../theme/assets/js/scripts.bundle.js"></script>
+    <script src="../theme/assets/plugins/custom/leaflet/leaflet.bundle.js"></script>
+    <script src="../theme/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <script src="../theme/assets/js/widgets.bundle.js"></script>
+    <script src="../theme/assets/js/custom/widgets.js"></script>
+    <script src="../theme/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/type.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/budget.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/settings.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/team.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/targets.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/files.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/complete.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-project/main.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/select-location.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="../theme/assets/js/custom/utilities/modals/users-search.js"></script>
+
+</body>
+</html>
