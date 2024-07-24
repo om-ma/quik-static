@@ -9,22 +9,36 @@
 node >= 16 LTS
 ```
 
-### Install Dependencies
-
-```
-npm install
-```
-
 ### Install Gulp
 
 ```
-npm install gulp gulp-cli
+npm install --global gulp
+```
+```
+npm install --global gulp-cli
+```
+
+
+### Install Yarn
+
+```
+npm install --global yarn
+```
+
+```
+yarn
 ```
 
 ### Run Project
 
 ```
-npm run localhost
+gulp --js
+```
+```
+gulp --sass
+```
+```
+gulp localhost
 ```
 
 
