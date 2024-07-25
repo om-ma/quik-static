@@ -18,7 +18,7 @@
 		<link href="../theme/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
 	</head>
 <body class="bg-gray-100 min-h-100" >
     <header>
@@ -26,7 +26,7 @@
             <div class="d-flex align-items-center gap-2 gap-lg-10" >
                 <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
                 <div>
-                    <img class="h-35px w-100px" src="https://d3jpyr6d7iubju.cloudfront.net/assets/logo-1d997c71e183ab502d28a9143fc087173ebe3c2dc97c52ae4ce46fbdf9ddbc24.svg">
+                    <img class="w-80px h-25px " src="./assets/quik-logo-new.svg">
                 </div>
                 <div class="d-none d-lg-flex align-items-center gap-12" >
                     <a href="#" class="text-gray-600 fs-6" >Dashboard</a>
@@ -83,14 +83,16 @@
     </header>
     <main>
         <div class="py-8 px-10" >
-            <h1 class="text-gray-900 fw-bold my-1 fs-2">Import Orders</h1>
+            <h1 class="text-secondary fw-bold my-1 fs-2">Import Orders</h1>
         </div>
-        <div class="bg-white rounded-3 min-h p-10 mx-lg-10" >
-            <h1 class="text-gray-900 fw-bold my-1 fs-3">Add Orders by importing</h1>
-            <div class="mt-5 d-flex flex-column flex-lg-row gap-10 mt-8" >
-                <div class="w-100" >
-                    <div class="d-none d-lg-block fv-row mb-8">
-                        <div class="bg-white border-gray-400 p-10 dropzone" id="kt_modal_create_project_settings_logo">
+        <div>
+            <div class="d-flex flex-column flex-lg-row gap-10 gap-lg-20 p-10 bg-white overflow-hidden mx-lg-10 rounded-3" >
+                <div class="w-100 w-lg-75" >
+                    <div>
+                        <h1 class="text-gray-600 fs-6 fw-normal" >Upload orders by importing a file.</h1>
+                    </div>
+                    <div class="mt-lg-5 d-none d-lg-block fv-row mb-8">
+                        <div class="p-10 border-dashed border-gray-300 border-hover-primary bg-hover-primary-light bg-gray-100 dropzone h-200px" id="kt_modal_create_project_settings_logo">
                             <div class="needsclick">
                                 <div class="d-flex justify-content-center align-items-center gap-5" >
                                     <img src="./assets/csv.svg" width="50" height="50" />
@@ -98,20 +100,24 @@
                                 </div>
                                 <div class="ms-4">
                                     <h4 class="mt-8 dfs-3 fs-6 fw-bold mb-1 text-gray-600">
-                                        <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Upload</a>or drag and drop your file
+                                        <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal"><u>Upload</u></a>or drag and drop your file
                                     </h4>
                                     <p class="mt-4 fw-semibold fs-4 text-gray-600 fs-6">CSV, XLSX</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex d-lg-none align-items-center justify-content-between" >
+                    <div class="mt-8 mt-lg-0 d-flex d-lg-none align-items-center justify-content-between" >
                         <a href="#" class="btn btn-outline me-2" id="kt_user_follow_button">
                             <span class="indicator-label">Upload</span>
                         </a>
                         <div class="d-flex justify-content-center align-items-center gap-5" >
-                            <img src="./assets/csv.svg" />
-                            <img src="./assets/xlsx.svg" />
+                            <div class="rounded-3 border border-gray-300" >
+                                <img src="./assets/csv.svg" />
+                            </div>
+                            <div class="rounded-3 border border-gray-300" >
+                                <img src="./assets/xlsx.svg" />
+                            </div>
                         </div>
                     </div>
                     <div class="mt-3 d-lg-none" >
@@ -121,23 +127,67 @@
                         <a href="#" class="btn btn-light me-2" id="kt_user_follow_button">
                             <span class="indicator-label">Cancel</span>
                         </a>
-                        <a href="#" class="btn fs-4 btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Import</a>
+                        <a href="./bulk_import_2.html" class="text-white" >
+                            <button class="btn fs-4 bg-primary text-white bg-hover-secondary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">
+                                Continue
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div class="w-100" >
-                    <div>
-                        <h1 class="text-gray-900 fw-bold my-1 fs-4">How do I upload a csv file?</h1>
-                        <p class="text-gray-600 fs-6 fw-normal mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum non assumenda quidem dolore in iste, odit enim officia ex minus suscipit ullam distinctio aut ad itaque a veniam. Possimus, recusandae beatae. Repellendus, cum expedita! Quibusdam, natus similique. Maiores, molestiae quae.</p>
-                    </div>
-                    <div class="mt-5" >
-                        <h1 class="text-gray-900 fw-bold my-1 fs-4">How will this work?</h1>
-                        <p class="text-gray-600 fs-6 fw-normal mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur impedit modi laboriosam tempora necessitatibus. Consectetur, facilis? Placeat dolorem vero facilis deleniti architecto inventore mollitia? Excepturi nisi doloremque optio nam eos quidem alias atque, esse fugiat quam unde repellendus velit voluptates.</p>
+                <div class="w-100 h-500px w-50 rounded-3" >
+                    <div class="d-flex flex-column flex-lg-row gap-10 mt-8" >
+                        <div class="w-100 h-100" >
+                           <div>
+                                <div>
+                                    <h1 class="text-secondary fw-bold my-1 fs-6">How do I upload a csv file?</h1>
+                                    <p class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3" ></p>
+                                    <p class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3" ></p>
+                                </div>
+                                <div>
+                                    <h1 class="text-secondary fw-bold my-1 fs-6">How will this work?</h1>
+                                    <div class="mt-3" >
+                                        <p class="fade-in text-justify text-gray-600 fs-6 fw-normal w-100" ></p>
+                                        <p class="fade-in text-justify text-gray-600 fs-6 fw-normal mt-2 w-75" ></p>
+                                    </div>
+                                    <p class="slide-animation  text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
+                                    <p class="slide-animation  text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
+                                    <p class="text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
+                                    <p class="text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
+                                </div>
+                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+       
     </main>
     
+
+    <script>
+        var txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ut voluptas odit magni quo tenetur laborum vitae, fuga amet eius laboriosam adipisci, dolores distinctio natus veniam, harum libero ullam.';
+        var speed = 5;
+
+        function typeWriter(element, i) {
+            return new Promise((resolve) => {
+                if (i < txt.length) {
+                    element.innerHTML += txt.charAt(i);
+                    setTimeout(() => typeWriter(element, i + 1).then(resolve), speed);
+                } else {
+                    resolve(); // Resolve the promise when done typing
+                }
+            });
+        }
+
+        window.onload = function() {
+            var elements = document.querySelectorAll(".demo-content");
+            let promiseChain = Promise.resolve(); // Start with a resolved promise
+
+            elements.forEach((element) => {
+                promiseChain = promiseChain.then(() => typeWriter(element, 0));
+            });
+        }
+    </script>
 
 
 

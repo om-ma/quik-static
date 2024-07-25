@@ -18,7 +18,7 @@
 		<link href="../theme/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
 	</head>
 <body class="bg-gray-100 min-h-100" >
     <header>
@@ -26,7 +26,7 @@
             <div class="d-flex align-items-center gap-2 gap-lg-10" >
                 <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
                 <div>
-                    <img class="h-35px w-100px" src="https://d3jpyr6d7iubju.cloudfront.net/assets/logo-1d997c71e183ab502d28a9143fc087173ebe3c2dc97c52ae4ce46fbdf9ddbc24.svg">
+                    <img class="w-80px h-25px " src="./assets/quik-logo-new.svg">
                 </div>
                 <div class="d-none d-lg-flex align-items-center gap-12" >
                     <a href="#" class="text-gray-600 fs-6" >Dashboard</a>
@@ -75,7 +75,6 @@
                         <div class="menu-item px-5">
                             <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -83,181 +82,547 @@
     </header>
     <main>
         <div class="py-8 px-10" >
-            <h1 class="text-gray-900 fw-bold my-1 fs-2">Import Orders</h1>
+            <h1 class="text-secondary fw-bold my-1 fs-2">Import Orders</h1>
         </div>
-        <div class="bg-white rounded-3 p-10 mx-lg-10" >
+        <div class="bg-white min-h-600px rounded-3 p-10 mx-lg-10" >
             <div>
-                <h1 class="text-gray-900 fw-bold my-1 fs-3">Map Column Headers</h1>
+                <h1 class="text-secondary fw-bold my-1 fs-3">Map Column Headers</h1>
                 <p class="text-gray-600 fs-6 fw-normal mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, repudiandae</p>
             </div>
-            <div class="table-responsive" >
-                <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table">
-                    <thead>
-                     <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0" >
-                         <th class="border-b border-gray-300 min-w-125px" >
-                             <select class="bg-gray-200 form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Order Id</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-175px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Buyer</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-100px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Payer</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-125px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Status</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-125px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Total</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-175px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Payment Type</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-125px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Weight</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-100px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Zone</option>
-                             </select>
-                         </th>
-                         <th class="border-b border-gray-300 min-w-150px" >
-                             <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
-                                 <option>Date Added</option>
-                             </select>
-                         </th>
-                     </tr>
-                         <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-                             <th class="border-b border-gray-300 min-w-100px">
-                                <div class="d-flex align-items-center justify-content-between" >
-                                    <span>Order No</span>
-                                    <img src="./assets/tick-circle.svg" alt="tick-circle" width="16" height="16" >
-                                </div>
-                             </th>
-                             <th class="border-b border-gray-300 min-w-175px">
-                                <div class="d-flex align-items-center justify-content-between" >
-                                    <span>Buyer</span>
-                                    <img src="./assets/tick-circle.svg" alt="tick-circle" width="16" height="16" >
-                                </div>
-                             </th>
-                             <th class="border-b border-gray-300 min-w-70px">Payer</th>
-                             <th class="border-b border-gray-300 min-w-100px">Status</th>
-                             <th class="border-b border-gray-300 min-w-100px">Total</th>
-                             <th class="border-b border-gray-300 min-w-125px">Payment Type</th>
-                             <th class="border-b border-gray-300 min-w-100px">Weight</th>
-                             <th class="border-b border-gray-300 min-w-100px">Zone</th>
-                             <th class="border-b border-gray-300 min-w-100px">Date Added</th>
-                         </tr>
-                    </thead>
-                    <tbody class="fw-semibold text-gray-600">
-                         <tr>
-                             <td class="border-b border-gray-300 text-gray-800 fw-bold py-4" >
-                                 01
-                             </td>
-                             <td class="border-b border-gray-300 py-4" > 
-                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
-                             </td>
-                             <td class="border-b border-gray-300 py-4 text-gray-800" >
-                                 Buyer
-                             </td>
-                             <td class="border-b border-gray-300 py-4" data-order="Completed">
-                                 <div class="badge badge-light-success">Delivered</div>
-                             </td>
-                             <td class="border-b border-gray-300 py-4" >
-                                 0.00L
-                             </td>
-                             <td class="border-b border-gray-300 py-4" >
-                                 Cash
-                             </td>
-                             <td class="border-b border-gray-300 py-4 text-uppercase" >
-                                 2kg
-                             </td>
-                             <td class="border-b border-gray-300 py-4" >
-                                 Allias
-                             </td>
-                             <td class="border-b border-gray-300 py-4" >
-                                 07/22/2024
-                             </td>
-                         </tr>
-                         <tr>
-                             <td class="border-b border-gray-300 text-gray-800 fw-bold py-3" >
-                                 01
-                             </td>
-                             <td class="border-b border-gray-300 py-3" > 
-                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
-                             </td>
-                             <td class="border-b border-gray-300 py-3 text-gray-800" >
-                                 Buyer
-                             </td>
-                             <td class="border-b border-gray-300 py-3" data-order="Completed">
-                                 <div class="badge badge-light-primary ">Order Created</div>
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 0.00L
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 Cash
-                             </td>
-                             <td class="border-b border-gray-300 py-3 text-uppercase" >
-                                 2kg
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 Allias
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 07/22/2024
-                             </td>
-                         </tr>
-                         <tr>
-                             <td class="border-b border-gray-300 text-gray-800 fw-bold py-3" >
-                                 01
-                             </td>
-                             <td class="border-b border-gray-300 py-3" > 
-                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
-                             </td>
-                             <td class="border-b border-gray-300 py-3 text-gray-800" >
-                                 Buyer
-                             </td>
-                             <td class="border-b border-gray-300 py-3" data-order="Completed">
-                                 <div class="badge badge-light-warning ">Pickup Awaiting</div>
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 0.00L
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 Cash
-                             </td>
-                             <td class="border-b border-gray-300 py-3 text-uppercase" >
-                                 2kg
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 Allias
-                             </td>
-                             <td class="border-b border-gray-300 py-3" >
-                                 07/22/2024
-                             </td>
-                         </tr>
-                    </tbody>
-                 </table>
+            <div class="table-responsive border border-gray-200 rounded-3 h-500px overflow-auto" >
+                <table class="w-100 table table-hover position-relative align-middle table-row-dashed fs-6 gy-5">
+                   <thead>
+                    <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0" >
+                        <th class="bg-white border-gray-300 min-w-125px ps-4" >
+                            <select class="bg-gray-200 form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Order Id</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-175px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Buyer</option>
+                                <option>Receiver</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Payer</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Status</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Total</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-175px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Payment Type</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-125px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Weight</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-100px" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Zone</option>
+                            </select>
+                        </th>
+                        <th class="bg-white border-b border-gray-300 min-w-150px pe-4" >
+                            <select class="form-select form-select-solid py-2 px-4 fs-6" data-control="select2" data-hide-search="true" data-placeholder="ORDER NO" data-kt-ecommerce-order-filter="status">
+                                <option>Date Added</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
+                        <th class="border-b border-gray-300 min-w-100px ps-4">
+                            <div class="d-flex align-items-center justify-content-between" >
+                                <span>Order No</span>
+                                <i class="ki-duotone ki-check-square fs-1 text-success">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </i>
+                            </div>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-175px">
+                            <div class="d-flex align-items-center justify-content-between" >
+                                <span>Buyer</span>
+                                <i class="ki-duotone ki-double-check fs-1 text-success">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </i>
+                            </div>
+                        </th>
+                        <th class="border-b border-gray-300 min-w-125px">
+                            <div class="d-flex align-items-center justify-content-between" >
+                                <span>Payer</span>
+                                <i class="ki-duotone ki-double-check-circle fs-1 text-success">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                    <span class="path3"></span>
+                                </i>
+                            </div>
+                        </th>
+                        <th class=" border-b border-gray-300 min-w-100px">Status</th>
+                        <th class=" border-b border-gray-300 min-w-100px">Total</th>
+                        <th class=" border-b border-gray-300 min-w-125px">Payment Type</th>
+                        <th class=" border-b border-gray-300 min-w-100px">Weight</th>
+                        <th class=" border-b border-gray-300 min-w-100px">Zone</th>
+                        <th class=" border-b border-gray-300 min-w-100px">Date Added</th>
+                    </tr>
+                   </thead>
+                   <tbody class="fw-semibold text-gray-600">
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-300 text-gray-800 fw-bold p-4" >
+                            01
+                        </td>
+                        <td class="border-b border-gray-300 py-4" > 
+                            <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-gray-800" >
+                            Buyer
+                        </td>
+                        <td class="border-b border-gray-300 py-4" data-order="Completed">
+                            <div class="badge badge-light-success">Delivered</div>
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            0.00L
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Cash
+                        </td>
+                        <td class="border-b border-gray-300 py-4 text-uppercase" >
+                            2kg
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            Allias
+                        </td>
+                        <td class="border-b border-gray-300 py-4" >
+                            07/22/2024
+                        </td>
+                    </tr>
+                   </tbody>
+                </table>
             </div>
             <div class="d-flex align-items-center justify-content-end gap-3 mt-10" >
                 <a href="#" class="btn btn-light me-2" id="kt_user_follow_button">
                     <span class="indicator-label">Cancel</span>
                 </a>
-                <a href="#" class="btn fs-4 btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Continue</a>
+                <a href="./bulk_import_orders_success.html">
+                    <button class="btn fs-4 bg-primary text-white bg-hover-secondary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Continue</button>
+                </a>
             </div>
         </div>
     </main>
