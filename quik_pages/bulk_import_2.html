@@ -26,7 +26,7 @@
             <div class="d-flex align-items-center gap-2 gap-lg-10" >
                 <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
                 <div>
-                    <img class="h-35px w-100px" src="https://d3jpyr6d7iubju.cloudfront.net/assets/logo-1d997c71e183ab502d28a9143fc087173ebe3c2dc97c52ae4ce46fbdf9ddbc24.svg">
+                    <img class="w-80px h-25px " src="./assets/quik-logo-new.svg">
                 </div>
                 <div class="d-none d-lg-flex align-items-center gap-12" >
                     <a href="#" class="text-gray-600 fs-6" >Dashboard</a>
@@ -83,49 +83,65 @@
     </header>
     <main>
         <div class="py-8 px-10" >
-            <h1 class="text-gray-900 fw-bold my-1 fs-2">Import Orders</h1>
+            <h1 class="text-secondary fw-bold my-1 fs-2">Import Orders</h1>
         </div>
         <div class="bg-white rounded-3 p-10 mx-lg-10" >
-            <h1 class="text-gray-900 fw-bold my-1 fs-3">Add Orders by importing</h1>
-            <div class="mt-5 d-flex flex-column-reverse flex-lg-row gap-10 mt-8" >
-                <div class="w-100" >
-                    <div class="d-none d-lg-block fv-row mb-8">
-                        <div class="p-10 dropzone" id="kt_modal_create_project_settings_logo">
+            <div class="d-flex flex-column flex-lg-row gap-lg-20" >
+                <div class="w-100 w-lg-75" >
+                    <div>
+                        <h1 class="text-gray-600 fs-6 fw-normal" >Upload orders by importing a file.</h1>
+                    </div>
+                    <div class="mt-lg-5 d-none d-lg-block fv-row mb-8">
+                        <div class="p-10 dropzone h-200px" id="kt_modal_create_project_settings_logo">
                             <div class="needsclick">
                                 <div class="d-flex justify-content-center align-items-center gap-5" >
-                                    <img src="./assets/csv-selected.svg" width="50" height="50" />
-                                    <img src="./assets/xlsx.svg"  width="50" height="50" />
+                                    <img src="./assets/csv.svg" width="50" height="50" />
+                                    <img src="./assets/xlsx.svg" width="50" height="50" />
                                 </div>
                                 <div class="ms-4">
                                     <h4 class="mt-8 dfs-3 fs-6 fw-bold mb-1 text-gray-600">
-                                        Your file is being uplaoded...
+                                        Your file is being uploaded...
                                     </h4>
-                                    <p class="mt-4 fw-semibold fs-6 text-primary">orders_import.csv</p>
+                                    <p class="mt-4 fw-semibold fs-4 text-primary fs-6">orders_import.csv</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-end gap-3 mt-10" >
-                        <a href="#" class="btn btn-light me-2" id="kt_user_follow_button">
-                            <span class="indicator-label">Cancel</span>
+                    <div class="d-none d-lg-flex align-items-center justify-content-end gap-3 mt-10" >
+                        <a href="./bulk_import_1.html" class="btn btn-light me-2" id="kt_user_follow_button">
+                            <span class="indicator-label">Reupload</span>
                         </a>
-                        <a href="#" class="btn fs-4 text-gray-800 bg-gray-300" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Uploading...</a>
+                        <a href="#" class="btn fs-4 bg-primary text-white bg-hover-secondary" data-kt-indicator="on" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">
+                            <span class="indicator-progress">
+                                Uploading... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </a>
                     </div>
                 </div>
-                <div class="w-100" >
+                <div class="w-100 h-400px h-lg-500px mt-5 mt-lg-10" >
                    <div class="rounded-3 bg-gray-100 p-6" >
-                        <h1 class="fs-3" >Upload Progress</h1>
+                        <h1 class="fs-3 text-secondary" >Upload Progress</h1>
                         <div class="mt-6 d-flex flex-column align-items-center gap-5" >
                             <div class="position-relative d-flex flex-center h-200px w-200px mb-5">
                                 <canvas id="kt_project_list_chart" width="200" height="200" class="d-block border-box w-200px h-200px"></canvas>
-                                <h1 class="position-absolute top-50 left-50 translate-middle-y  fs-3hx fs-lg-2hx fw-black" >82%</h1>
+                                <h1 class="text-secondary position-absolute top-50 left-50 translate-middle-y fs-3hx fs-lg-2hx fw-black" >82%</h1>
                             </div>
                             <div class="text-center" >
-                                <h1 class="fs-3 text-gray-900" >Wait a little bit...</h1>
+                                <h1 class="fs-3 text-gray-900 text-secondary" >Wait a little bit...</h1>
                                 <p class="fs-6 text-gray-600" >Uplading file</p>
                             </div>
                         </div>
                    </div>
+                </div>
+                <div class="d-flex d-lg-none align-items-center justify-content-end gap-3" >
+                    <a href="./bulk_import_1.html" class="btn btn-light me-2" id="kt_user_follow_button">
+                        <span class="indicator-label">Reupload</span>
+                    </a>
+                    <a href="#" class="btn fs-4 bg-primary text-white bg-hover-secondary" data-kt-indicator="on" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">
+                        <span class="indicator-progress">
+                            Uploading... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>

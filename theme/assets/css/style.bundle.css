@@ -30,7 +30,7 @@
   --bs-gray-900: #071437;
   --bs-light: #f9f9f9;
   --bs-primary: #4fc9f3;
-  --bs-secondary: #f1f1f4;
+  --bs-secondary: #1c3a6a;
   --bs-success: #50cd89;
   --bs-info: #7239ea;
   --bs-warning: #ffc700;
@@ -38,7 +38,7 @@
   --bs-dark: #1e2129;
   --bs-light-rgb: 249, 249, 249;
   --bs-primary-rgb: 0, 163, 255;
-  --bs-secondary-rgb: 241, 241, 244;
+  --bs-secondary-rgb: #1c3a6a;
   --bs-success-rgb: 80, 205, 137;
   --bs-info-rgb: 114, 57, 234;
   --bs-warning-rgb: 255, 199, 0;
@@ -2386,7 +2386,7 @@ textarea.form-control-lg {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.5;
-  color: var(--bs-gray-700);
+  color: #1c3a6a !important;
   appearance: none;
   background-color: var(--bs-body-bg);
   background-image: var(--bs-form-select-bg-img),
@@ -10424,7 +10424,7 @@ fieldset:disabled .btn {
 }
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-secondary-rgb) !important;
 }
 .text-success {
   --bs-text-opacity: 1;
@@ -10682,10 +10682,7 @@ fieldset:disabled .btn {
 }
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(
-    var(--bs-secondary-rgb),
-    var(--bs-bg-opacity)
-  ) !important;
+  background-color: var(--bs-secondary);
 }
 .bg-success {
   --bs-bg-opacity: 1;
@@ -27223,7 +27220,7 @@ fieldset:disabled .btn {
   --bs-gray-900-rgb: 7, 20, 55;
   --bs-light: #f9f9f9;
   --bs-primary: #4fc9f3;
-  --bs-secondary: #f1f1f4;
+  --bs-secondary: #1c3a6a;
   --bs-success: #50cd89;
   --bs-info: #7239ea;
   --bs-warning: #ffc700;
@@ -27238,7 +27235,7 @@ fieldset:disabled .btn {
   --bs-danger-active: #d9214e;
   --bs-dark-active: #111318;
   --bs-primary-light: #f1faff;
-  --bs-secondary-light: #f9f9f9;
+  --bs-secondary-light: #1c3a6a29;
   --bs-success-light: #e8fff3;
   --bs-info-light: #f8f5ff;
   --bs-warning-light: #fff8dd;
@@ -27271,7 +27268,7 @@ fieldset:disabled .btn {
   --bs-dark-rgb: 30, 33, 41;
   --bs-text-white: #ffffff;
   --bs-text-primary: #4fc9f3;
-  --bs-text-secondary: #f1f1f4;
+  --bs-text-secondary: #1c3a6a;
   --bs-text-light: #f9f9f9;
   --bs-text-success: #50cd89;
   --bs-text-info: #7239ea;
@@ -48088,6 +48085,12 @@ label.rating-label:hover ~ .rating-label > i {
 .bg-hover-primary:hover {
   background-color: var(--bs-primary) !important;
 }
+.bg-hover-primary-light {
+  cursor: pointer;
+}
+.bg-hover-primary-light:hover {
+  background-color: var(--bs-primary-light) !important;
+}
 .bg-active-primary.active {
   background-color: var(--bs-primary) !important;
 }
@@ -48126,10 +48129,11 @@ label.rating-label:hover ~ .rating-label > i {
   cursor: pointer;
 }
 .bg-hover-secondary:hover {
-  background-color: var(--bs-secondary) !important;
+  background-color: #1c3a6a !important;
+  
 }
 .bg-active-secondary.active {
-  background-color: var(--bs-secondary) !important;
+  background-color: #1c3a6a !important;
 }
 .bg-state-secondary {
   cursor: pointer;
@@ -49130,6 +49134,7 @@ label.rating-label:hover ~ .rating-label > i {
 .text-hover-primary {
   transition: color 0.2s ease;
 }
+
 .text-hover-primary i {
   transition: color 0.2s ease;
 }

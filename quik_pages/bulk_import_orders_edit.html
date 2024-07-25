@@ -26,7 +26,7 @@
             <div class="d-flex align-items-center gap-2 gap-lg-10" >
                 <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
                 <div>
-                    <img class="h-35px w-100px" src="https://d3jpyr6d7iubju.cloudfront.net/assets/logo-1d997c71e183ab502d28a9143fc087173ebe3c2dc97c52ae4ce46fbdf9ddbc24.svg">
+                    <img class="w-80px h-25px " src="./assets/quik-logo-new.svg">
                 </div>
                 <div class="d-none d-lg-flex align-items-center gap-12" >
                     <a href="#" class="text-gray-600 fs-6" >Dashboard</a>
@@ -75,99 +75,170 @@
                         <div class="menu-item px-5">
                             <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main >
         <div class="py-8 px-10" >
-            <h1 class="text-gray-900 fw-bold my-1 fs-2">Import Orders</h1>
+            <h1 class="text-secondary fw-bold my-1 fs-2">Import Orders</h1>
         </div>
-        <div class="bg-white rounded-3 py-5 px-5 px-lg-10 mx-5 mx-lg-10" >
-            <div class="d-flex align-items-center justify-content-between w-100" > 
-                <h1 class="text-gray-900 fw-bold my-1 fs-3">Imported Orders</h1>
-                <div class="d-none d-lg-block px-0 nav-group bg-white" data-kt-buttons="true">
-                    <button class="fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2 active" data-kt-plan="month">
-                        <span class="fs-7" >Total</span>
-                        <span class="fs-7" >12</span>
-                    </button>
-                    <button class="mx-1 fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
-                        <span class="fs-7" >Valid Orders</span>
-                        <span class="fs-7" >11</span>
-                    </button>
-                    <button class="fw-bold alert-danger border-none btn-color-danger btn btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
-                        <span class="fs-7" >Invalid Orders</span>
-                        <span class="fs-7" >1</span>
-                    </button>
-                    <button class="ms-1 btn btn-danger fs-7 py-3" >
-                        <span>Remove Invalid Orders</span>
-                    </button>
-                </div>
-            </div>
-                <div class="mt-5" >
-                    <div class="alert alert-danger border-dashed border-danger d-flex align-items-center p-5">
-                        <i class="ki-duotone ki-abstract-11 fs-2hx text-danger me-4">
+        <div class="bg-white rounded-3 px-4 py-3 mx-5 mx-lg-10" >
+            <div class="d-flex align-items-center justify-content-between w-100" >
+                <div>
+                    <div class="m-0 alert alert-danger border-0 d-flex align-items-center p-2">
+                        <i class="ki-duotone ki-abstract-11 fs-1 text-danger me-2">
                             <span class="path1"></span><span class="path2"></span>
                         </i>
 
-                    <div class="d-flex flex-column">
-                        <h4 class="mb-1 fs-6 text-danger">1 validation failed!</h4>
-                        <span class="fs-6" >Please fix it before moving to next step.</span>
+                        <div class="d-flex flex-column">
+                            <div class="fs-7 text-danger"><span class="fw-semibold" >1 validation failed!</span><span class="ms-2" >Please fix it before moving to the next step.</span></div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="d-flex align-items-center gap-2" >
+                    <div>
+                        <form data-kt-search-element="form" class="d-lg-block w-100 position-relative mb-5 mb-lg-0 d-none" autocomplete="off">	
+                            <!--begin::Hidden input(Added to disable form autocomplete)-->
+                            <input type="hidden">
+                            <!--end::Hidden input-->
+                        
+                            <!--begin::Icon-->
+                            <i class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5"><span class="path1"></span><span class="path2"></span></i>    <!--end::Icon-->
+                        
+                            <!--begin::Input-->
+                            <input type="text" class="search-input form-control form-control-sm form-control-solid  ps-13" name="search" value="" placeholder="Search order" data-kt-search-element="input">
+                            <!--end::Input-->
+                        
+                            <!--begin::Spinner-->
+                            <span class="search-spinner  position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
+                                <span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
+                            </span>
+                            <!--end::Spinner-->
+                        
+                            <!--begin::Reset-->
+                            <span class="search-reset  btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-4" data-kt-search-element="clear">
+                                <i class="ki-duotone ki-cross fs-2 fs-lg-1 me-0"><span class="path1"></span><span class="path2"></span></i>    </span>
+                            <!--end::Reset-->
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-block px-0 nav-group bg-white" data-kt-buttons="true">
+                        <button class="fs-8 fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active-primary px-4 py-2 active" data-kt-plan="month">
+                            <span>Total</span>
+                            <span>12</span>
+                        </button>
+                        <button class="mx-1 fs-8 fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active-primary px-4 py-2" data-kt-plan="annual">
+                            <span>Valid Orders</span>
+                            <span>11</span>
+                        </button>
+                        <button class="bg-hover-danger rounded-1 text-hover-white fs-8 fw-bold alert-danger border-0 btn-color-danger btn-active-danger px-4 py-2" data-kt-plan="annual">
+                            <span>Invalid Orders</span>
+                            <span>1</span>
+                        </button>
+                        <button class="ms-1 btn btn-danger fs-8 py-2" >
+                            <span>Remove Invalid Orders</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="d-lg-none mt-5 bg-white rounded-3 py-5 px-lg-10 mx-5 mx-lg-10" >
-            <div class="nav-group d-flex align-items-center justify-content-center bg-white" data-kt-buttons="true">
-                <button class="fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2 active" data-kt-plan="month">
-                    <span class="fs-7" >Total</span>
-                    <span class="fs-7" >12</span>
-                </button>
-                <button class="mx-1 fw-bold btn-color-gray-700 btn btn-outline border border-gray-300 btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
-                    <span class="fs-7" >Valid Orders</span>
-                    <span class="fs-7" >11</span>
-                </button>
-                <button class="fw-bold alert-danger border-none btn-color-danger btn btn-active btn-active-primary px-4 py-2" data-kt-plan="annual">
-                    <span class="fs-7" >Invalid Orders</span>
-                    <span class="fs-7" >1</span>
-                </button>
+        <div class="d-flex align-items-start gap-4 d-lg-none mt-5 bg-white rounded-3 pt-5 pb-0 py-lg-5 px-5 px-lg-10 mx-5 mx-lg-10" >
+            <div class="w-100" >
+                <form data-kt-search-element="form" class="w-100 position-relative mb-5 mb-lg-0" autocomplete="off">	
+                    <!--begin::Hidden input(Added to disable form autocomplete)-->
+                    <input type="hidden">
+                    <!--end::Hidden input-->
+                
+                    <!--begin::Icon-->
+                    <i class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5"><span class="path1"></span><span class="path2"></span></i>    <!--end::Icon-->
+                
+                    <!--begin::Input-->
+                    <input type="text" class="search-input form-control form-control-solid  ps-13" name="search" value="" placeholder="Search order" data-kt-search-element="input">
+                    <!--end::Input-->
+                
+                    <!--begin::Spinner-->
+                    <span class="search-spinner  position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
+                        <span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
+                    </span>
+                    <!--end::Spinner-->
+                
+                    <!--begin::Reset-->
+                    <span class="search-reset  btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-4" data-kt-search-element="clear">
+                        <i class="ki-duotone ki-cross fs-2 fs-lg-1 me-0"><span class="path1"></span><span class="path2"></span></i>    </span>
+                    <!--end::Reset-->
+                </form>
             </div>
+           <div class="w-100" >
+            <a href="#" class="d-flex align-items-center justify-content-between btn btn-sm btn-light btn-active-light-primary btn-flex btn-center w-100 py-4" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                <span>Filters</span>
+                <i class="ki-duotone ki-filter">
+                    <span class="path1"></span>
+                    <span class="path2"></span>
+                </i>
+            </a>
+            <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold w-200px fs-7 px-3 py-4" data-kt-menu="true">
+                <div class="menu-item px-3 py-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label px-2" for="flexCheckChecked">
+                            Show All Orders (12)
+                        </label>
+                    </div>                    
+                </div>
+                <div class="menu-item px-3 py-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label px-2" for="flexCheckChecked">
+                            Valid Orders (12)
+                        </label>
+                    </div>                    
+                </div>
+                <div class="menu-item px-3 py-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                        <label class="form-check-label px-2" for="flexCheckChecked">
+                            Invalid Orders (0)
+                        </label>
+                    </div>                    
+                </div>
+            </div>
+           </div>
         </div>
         <div class="mx-5 d-lg-none" >
             <button class="mt-5 w-100 ms-1 btn btn-danger fs-6 py-3" >
                 <span>Remove Invalid Orders</span>
             </button>
         </div>
-        <div class="mt-5 bg-white rounded-3 pb-5 mx-lg-10" >
+        <div class="mt-5 bg-white min-h-550px rounded-3 pb-10 mx-lg-10" >
             <div class="table-responsive" >
-                <table class="table align-middle table-row-dashed fs-6 gy-5">
+                <table class="table table-hover position-relative align-middle table-row-dashed fs-6 gy-5">
                     <thead>
                          <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-                             <th class="border-b border-gray-300 min-w-100px py-4 ps-5">
+                             <th class="border-b border-gray-300 min-w-100px py-4 ps-5 ">
                                Order No
                              </th>
                              <th class="border-b border-gray-300 min-w-175px p-4">
                                 Buyer
                              </th>
-                             <th class="border-b border-gray-300 min-w-70px p-4">Payer</th>
-                             <th class="border-b border-gray-300 min-w-100px p-4">Status</th>
-                             <th class="border-b border-gray-300 min-w-100px p-4">Total</th>
-                             <th class="border-b border-gray-300 min-w-125px p-4">Payment Type</th>
-                             <th class="border-b border-gray-300 min-w-100px p-4">Weight</th>
-                             <th class="border-b border-gray-300 min-w-100px p-4">Zone</th>
-                             <th class="border-b border-gray-300 min-w-100px p-4">Date Added</th>
-                             <th class="min-w-70px p-4" ></th>
+                             <th class="border-b border-gray-300 min-w-70px  p-4">Payer</th>
+                             <th class="border-b border-gray-300 min-w-100p  p-4">Status</th>
+                             <th class="border-b border-gray-300 min-w-100p  p-4">Total</th>
+                             <th class="border-b border-gray-300 min-w-125p  p-4">Payment Type</th>
+                             <th class="border-b border-gray-300 min-w-100p  p-4">Weight</th>
+                             <th class="border-b border-gray-300 min-w-100p  p-4">Zone</th>
+                             <th class="border-b border-gray-300 min-w-100p  p-4">Date Added</th>
                              <th class="min-w-70px text-end py-4 pe-5" >Actions</th>
                          </tr>
                     </thead>
                     <tbody class="fw-semibold text-gray-600">
                          <tr>
-                             <td class="border-b border-gray-300 text-gray-800 fw-bold p-4 py-4 ps-5" >
+                             <td class="border-b border-gray-300 text-gray-800 fw-bold py-4 ps-5" >
                                  01
                              </td>
                              <td class="border-b border-gray-300 p-4" > 
-                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                                 <a href="apps/user-management/users/view.html" class="text-secondary text-hover-primary fs-5 fw-bold">Max Smith</a>
                              </td>
                              <td class="border-b border-gray-300 py-4 text-gray-800" >
                                  Buyer
@@ -190,7 +261,6 @@
                              <td class="border-b border-gray-300 p-4" >
                                  07/22/2024
                              </td>
-                             <td class="p-4" ></td>
                              <td class="text-end py-4 pe-5">
                                 <a href="#" class="btn btn-sm btn-light btn-active-light-primary btn-flex btn-center" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
                                 <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
@@ -204,12 +274,52 @@
                                 </div>
                             </td>
                          </tr>
-                         <tr class="alert-danger border-none" >
-                             <td class="border-b border-gray-300 text-gray-800 fw-bold py-4 ps-5" >
-                                Max Smith
+                         <tr>
+                             <td class="bg-light-danger border-b border-gray-300 text-gray-800 fw-bold py-4 ps-5" >
+                                <div class="d-flex align-items-center justify-content-between" >
+                                    <span> Smith</span>
+                                    <div data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-placement="right" title="Errors!" 
+                                    data-bs-content='
+                                        <div class="d-flex flex-column gap-3" >
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
+                                                    <span class="path1"></span>
+                                                    <span class="path2"></span>
+                                                    <span class="path3"></span>
+                                                </i>
+                                                <span class="text-danger" >Expected order no to be a number.</span>
+                                            </div>
+                                        </div>'>
+                                        <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+                                    </div>
+                                </div>
                              </td>
-                             <td class="border-b border-gray-300 p-4" > 
-                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">1</a>
+                             <td class="bg-light-danger border-b border-gray-300 p-4" > 
+                                <div class="d-flex align-items-center justify-content-between" >
+                                    <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">1</a>
+                                    <div data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-placement="right" title="Errors!" 
+                                    data-bs-content='
+                                        <div class="d-flex flex-column gap-3" >
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
+                                                    <span class="path1"></span>
+                                                    <span class="path2"></span>
+                                                    <span class="path3"></span>
+                                                </i>
+                                                <span class="text-danger" >Expected buyer to be a string.</span>
+                                            </div>
+                                        </div>'>
+                                        <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+                                    </div>
+                                </div>
                              </td>
                              <td class="border-b border-gray-300 p-4 text-gray-800" >
                                  Buyer
@@ -232,34 +342,6 @@
                              <td class="border-b border-gray-300 p-4" >
                                  07/22/2024
                              </td>
-                             <td>
-                                <div data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-placement="left" title="Errors!" 
-                                    data-bs-content='
-                                        <div class="d-flex flex-column gap-3" >
-                                            <div class="d-flex align-items-center gap-3">
-                                                <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
-                                                    <span class="path1"></span>
-                                                    <span class="path2"></span>
-                                                    <span class="path3"></span>
-                                                </i>
-                                                <span class="text-danger" >Expected order no to be a number.</span>
-                                            </div>
-                                            <div class="d-flex align-items-center gap-3">
-                                                <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
-                                                    <span class="path1"></span>
-                                                    <span class="path2"></span>
-                                                    <span class="path3"></span>
-                                                </i>
-                                                <span class="text-danger" >Expected buyer to be a string.</span>
-                                            </div>
-                                        </div>'>
-                                        <i class="ki-duotone ki-information fs-1 cursor-pointer text-danger">
-                                            <span class="path1"></span>
-                                            <span class="path2"></span>
-                                            <span class="path3"></span>
-                                        </i>
-                                </div>
-                             </td>
                              <td class="text-end py-4 pe-5">
                                 <a href="#" class="btn btn-sm btn-light btn-active-light-primary btn-flex btn-center" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                                     Actions 
@@ -280,7 +362,7 @@
                                  01
                              </td>
                              <td class="border-b border-gray-300 p-4" > 
-                                 <a href="apps/user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Max Smith</a>
+                                <a href="apps/user-management/users/view.html" class="text-secondary text-hover-primary fs-5 fw-bold">Max Smith</a>
                              </td>
                              <td class="border-b border-gray-300 p-4 text-gray-800" >
                                  Buyer
@@ -303,7 +385,6 @@
                              <td class="border-b border-gray-300 p-4" >
                                  07/22/2024
                              </td>
-                             <td class="p-4" ></td>
                              <td class="text-end py-4 pe-5">
                                 <a href="#" class="btn btn-sm btn-light btn-active-light-primary btn-flex btn-center" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
                                 <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
@@ -390,7 +471,7 @@
                                     </h2>
                                     <div id="kt_accordion_1_body_2" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_2">
                                         <div class="p-4" >
-                                           <div class="d-flex gap-4" >
+                                        <div class="d-flex gap-4" >
                                                 <div class="w-100" >
                                                     <label class="mb-1 font-bold" >Order No</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Max Smith"/>
@@ -399,8 +480,8 @@
                                                     <label class="mb-1 font-bold" >Buyer</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Max Smith"/>
                                                 </div>
-                                           </div>
-                                           <div class="d-flex gap-4 mt-4" >
+                                        </div>
+                                        <div class="d-flex gap-4 mt-4" >
                                                 <div class="w-100" >
                                                     <label class="mb-1 font-bold" >Payer</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Buyer"/>
@@ -409,8 +490,8 @@
                                                     <label class="mb-1 font-bold" >Payment Type</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Cash"/>
                                                 </div>
-                                           </div>
-                                           <div class="d-flex gap-4 mt-4" >
+                                        </div>
+                                        <div class="d-flex gap-4 mt-4" >
                                                 <div class="w-100" >
                                                     <label class="mb-1 font-bold" >Weight</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="2kg"/>
@@ -419,7 +500,7 @@
                                                     <label class="mb-1 font-bold" >Zone</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Allias"/>
                                                 </div>
-                                           </div>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -435,8 +516,8 @@
                                     </h2>
                                     <div id="kt_accordion_1_body_3" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_3">
                                         <div class="p-4" >
-                                           <h1 class="fs-5 font-bold" >Billing Address</h1>
-                                           <div class="d-flex gap-4 mt-5" >
+                                        <h1 class="fs-5 font-bold" >Billing Address</h1>
+                                        <div class="d-flex gap-4 mt-5" >
                                                 <div class="w-100" >
                                                     <label class="mb-1 font-bold" >First Name</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Max"/>
@@ -445,8 +526,8 @@
                                                     <label class="mb-1 font-bold" >Last Name</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Smith"/>
                                                 </div>
-                                           </div>
-                                           <div class="d-flex gap-4 mt-4" >
+                                        </div>
+                                        <div class="d-flex gap-4 mt-4" >
                                                 <div class="w-100" >
                                                     <label class="mb-1 font-bold" >Phone Number</label>
                                                     <input type="text" class="form-control w-100 fs-7" value=+355"/>
@@ -455,8 +536,8 @@
                                                     <label class="mb-1 font-bold" >City</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Tirana"/>
                                                 </div>
-                                           </div>
-                                           <div class="d-flex gap-4 mt-4" >
+                                        </div>
+                                        <div class="d-flex gap-4 mt-4" >
                                                 <div class="w-100" >
                                                     <label class="mb-1 font-bold" >Address Line 1</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="Street #2"/>
@@ -465,7 +546,7 @@
                                                     <label class="mb-1 font-bold" >Zone</label>
                                                     <input type="text" class="form-control w-100 fs-7" value="House #286"/>
                                                 </div>
-                                           </div>
+                                        </div>
                                         </div>
                                         <div class="p-4" >
                                             <h1 class="fs-5 font-bold" >Shipping Address</h1>
@@ -493,7 +574,7 @@
                 <a href="#" class="btn btn-light me-2" id="kt_user_follow_button">
                     <span class="indicator-label">Cancel</span>
                 </a>
-                <a href="#" class="btn fs-4 btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Continue</a>
+                <a href="#" class="btn fs-4 bg-primary text-white bg-hover-secondary" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Continue</a>
             </div>
         </div>
     </main>
@@ -558,3 +639,13 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+ 
