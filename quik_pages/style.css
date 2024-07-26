@@ -16,7 +16,6 @@ table > thead > tr:nth-child(1) > th {
     position: sticky !important;
     top: 0 !important;
     z-index: 2 !important;
-    background-color: red;
 }
 
 table > thead > tr:nth-child(2) > th {
@@ -60,6 +59,17 @@ table > thead > tr:nth-child(2) > th {
     }
   }
   
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   .slide-animation {
     animation: slideIn 1s ease-in-out;
   }
@@ -68,7 +78,49 @@ table > thead > tr:nth-child(2) > th {
     animation-delay: 0.5s;
   }
 
-  
+  .slide-up {
+    animation: slideUp 1s ease-in-out;
+  }
 
 
-  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-search-icon.ki-duotone.ki-magnifier {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: #ccc;
+    pointer-events: none;
+}
+
+.search-click {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    width: 36px;
+    padding: 5px;
+    padding-left: 35px;
+    transition: width 0.5s;
+    opacity: 0;
+}
+
+.search-container {
+    border: 1px solid #dbdfe9;
+    border-radius: 6px;
+    width: 40px;
+    transition: width 0.5s, border-color 0.5s;
+}
+
+.search-click:focus {
+    width: 100%; /* Full width for the input */
+    opacity: 1; /* Show the input text on focus */
+}
+
+.search-container:focus-within {
+    width: 300px; /* Expand the container width on input focus */
+    border-color: #007bff; /* Change border color on focus */
+}
