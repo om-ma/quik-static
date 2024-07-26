@@ -136,26 +136,23 @@
                 </div>
                 <div class="w-100 h-500px w-50 rounded-3" >
                     <div class="d-flex flex-column flex-lg-row gap-10 mt-8" >
-                        <div class="w-100 h-100" >
-                           <div>
+                        <div class="w-100 h-100">
+                            <div>
                                 <div>
-                                    <h1 class="text-secondary fw-bold my-1 fs-6">How do I upload a csv file?</h1>
-                                    <p class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3" ></p>
-                                    <p class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3" ></p>
+                                    <h1 id="heading1" class="text-secondary fw-bold my-1 fs-6"></h1>
+                                    <p id="para1-1" class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3"></p>
+                                    <p id="para1-2" class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3"></p>
                                 </div>
                                 <div>
-                                    <h1 class="text-secondary fw-bold my-1 fs-6">How will this work?</h1>
-                                    <div class="mt-3" >
-                                        <p class="fade-in text-justify text-gray-600 fs-6 fw-normal w-100" ></p>
-                                        <p class="fade-in text-justify text-gray-600 fs-6 fw-normal mt-2 w-75" ></p>
-                                    </div>
-                                    <p class="slide-animation  text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
-                                    <p class="slide-animation  text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
-                                    <p class="text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
-                                    <p class="text-justify text-gray-600 fs-6 fw-normal mt-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto ab tempora ullam neque odio minus, soluta maxime nobis eius illo? Quidem ex mollitia iure non vel. Quisquam, odit saepe?</p>
+                                    <h1 id="heading2" class="text-secondary fw-bold my-1 fs-6"></h1>
+                                    <p id="para2-1" class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3"></p>
+                                    <p id="para2-2" class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3"></p>
+                                    <p id="para2-3" class="demo-content text-justify text-gray-600 fs-6 fw-normal mt-3"></p>
                                 </div>
-                           </div>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -165,30 +162,48 @@
     
 
     <script>
-        var txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus ut voluptas odit magni quo tenetur laborum vitae, fuga amet eius laboriosam adipisci, dolores distinctio natus veniam, harum libero ullam.';
+        var txt1heading = 'How do I upload a csv file?';
+        var txt1para1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+        var txt1para2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+        
+        var txt2heading = 'How will this work?';
+        var txt2para1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+        var txt2para2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+        var txt2para3 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?.';
+        
         var speed = 5;
-
-        function typeWriter(element, i) {
+    
+        function typeWriter(element, text, i) {
             return new Promise((resolve) => {
-                if (i < txt.length) {
-                    element.innerHTML += txt.charAt(i);
-                    setTimeout(() => typeWriter(element, i + 1).then(resolve), speed);
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    setTimeout(() => typeWriter(element, text, i + 1).then(resolve), speed);
                 } else {
                     resolve(); // Resolve the promise when done typing
                 }
             });
         }
-
+    
         window.onload = function() {
-            var elements = document.querySelectorAll(".demo-content");
-            let promiseChain = Promise.resolve(); // Start with a resolved promise
-
-            elements.forEach((element) => {
-                promiseChain = promiseChain.then(() => typeWriter(element, 0));
-            });
+            let heading1 = document.getElementById('heading1');
+            let para1_1 = document.getElementById('para1-1');
+            let para1_2 = document.getElementById('para1-2');
+            
+            let heading2 = document.getElementById('heading2');
+            let para2_1 = document.getElementById('para2-1');
+            let para2_2 = document.getElementById('para2-2');
+            let para2_3 = document.getElementById('para2-3');
+            
+            typeWriter(heading1, txt1heading, 0)
+                .then(() => typeWriter(para1_1, txt1para1, 0))
+                .then(() => typeWriter(para1_2, txt1para2, 0))
+                .then(() => typeWriter(heading2, txt2heading, 0))
+                .then(() => typeWriter(para2_1, txt2para1, 0))
+                .then(() => typeWriter(para2_2, txt2para2, 0))
+                .then(() => typeWriter(para2_3, txt2para3, 0));
         }
     </script>
-
+    
 
 
 		<script src="../theme/assets/plugins/global/plugins.bundle.js"></script>
