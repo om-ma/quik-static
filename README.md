@@ -26,13 +26,6 @@ npm install
 
 ### Run Project
 
-```
-gulp --js
-```
-
-```
-gulp --sass
-```
 
 ## compile files in theme/assets folder
 ```
