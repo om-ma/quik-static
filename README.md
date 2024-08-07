@@ -10,6 +10,9 @@ node >= 16 LTS
 ```
 
 ### Install Gulp
+```
+cd tools
+```
 
 ```
 npm install --global gulp
