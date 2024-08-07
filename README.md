@@ -37,9 +37,17 @@ yarn
 ```
 gulp --js
 ```
+
 ```
 gulp --sass
 ```
+
+## compile files in theme/assets folder
+```
+gulp compile
+```
+
+## Run locally to see changes realtime
 ```
 gulp localhost
 ```
