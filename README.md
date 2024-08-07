@@ -20,16 +20,8 @@ npm install --global gulp
 ```
 npm install --global gulp-cli
 ```
-
-
-### Install Yarn
-
 ```
-npm install --global yarn
-```
-
-```
-yarn
+npm install
 ```
 
 ### Run Project
