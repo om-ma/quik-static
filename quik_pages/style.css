@@ -124,3 +124,20 @@ table > thead > tr:nth-child(2) > th {
     width: 300px; /* Expand the container width on input focus */
     border-color: #007bff; /* Change border color on focus */
 }
+
+
+.text-secondary-main {
+  color: #1c3a6a !important;
+}
+
+.bg-secondary-main {
+  background: #1c3a6a !important;
+}
+
+.bg-secondary-light {
+  background: #E9ECF1;
+}
+
+.bg-primary-light-20 {
+  background: #D7EFF8 !important;
+}
