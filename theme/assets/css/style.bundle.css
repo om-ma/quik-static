@@ -49166,9 +49166,6 @@ label.rating-label:hover ~ .rating-label > i {
 .text-active-primary.active .svg-icon {
   color: var(--bs-text-primary) !important;
 }
-.text-secondary {
-  color: var(--bs-text-secondary) !important;
-}
 .text-inverse-secondary {
   color: var(--bs-secondary-inverse) !important;
 }
