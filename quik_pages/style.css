@@ -141,3 +141,7 @@ table > thead > tr:nth-child(2) > th {
 .bg-primary-light-20 {
   background: #D7EFF8 !important;
 }
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
