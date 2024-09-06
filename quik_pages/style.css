@@ -145,3 +145,8 @@ table > thead > tr:nth-child(2) > th {
 .flex-shrink-0 {
   flex-shrink: 0;
 }
+
+.translate-y-middle {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
