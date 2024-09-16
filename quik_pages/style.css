@@ -150,3 +150,45 @@ table > thead > tr:nth-child(2) > th {
   top: 50% !important;
   transform: translateY(-50%) !important;
 }
+
+.profile-header {
+  margin-top: -80px;
+}
+
+.image-input-placeholder {
+  background-image: url('../theme/assets/media/avatars/300-1.jpg');
+}
+
+
+.image-input-wrapper {
+  background-image: url('../theme/assets/media/avatars/300-1.jpg');
+}
+
+.image-input-circle {
+  background-image: url('../theme/assets/media/avatars/blank.png');
+}
+
+.image-input-action [data-kt-image-input-action="change"] {
+  bottom: 0 !important;
+}
+
+.profile-background {
+  object-fit: cover;
+}
+
+.nav-line-tabs .nav-item .nav-link.active, .nav-line-tabs .nav-item .nav-link:hover:not(.disabled), .nav-line-tabs .nav-item.show .nav-link {
+  background-color: #EDFAFE !important;
+  border-bottom: 1px solid #4FC9F3 !important;
+  color: #4FC9F3 !important;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .profile-header {
+    margin-top: -40px;
+  }
+  .profile-tabs {
+    overflow-x: scroll;
+  }
+}
