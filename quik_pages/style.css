@@ -216,7 +216,29 @@ table > thead > tr:nth-child(2) > th {
   font-size: 24px;
   color: #1C3A6A;
   font-weight: bolder;
-  margin: 0px 10px; }
+  margin: 0px 10px; 
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+.bg-delayed-primary {
+  background: #FFB5B5;
+}
+
+.bg-delayed-secondary {
+  background: #D48989;
+}
+
+.bg-average-primary {
+  background: #8AEFD1;
+}
+
+.bg-average-secondary {
+  background: #639787;
+}
+
 
 /* Media Queries */
 
@@ -238,3 +260,4 @@ table > thead > tr:nth-child(2) > th {
     height: 120px; 
   }
 }
+
