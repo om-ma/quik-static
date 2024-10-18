@@ -1,10 +1,10 @@
 "use strict";
 
 // Class definition
-var AmountChart = function () {    
+var PayoutsPaidChart = function () {    
     var initChart = function () {
         // Get all elements with the class 'kt_project_list_chart'
-        var elements = document.getElementsByClassName("live_orders_chart");
+        var elements = document.getElementsByClassName("payouts_paid_chart");
 
         if (elements.length === 0) {
             return;
@@ -16,8 +16,8 @@ var AmountChart = function () {
                 type: 'doughnut',
                 data: {
                     datasets: [{
-                        data: [70, 30],
-                        backgroundColor: ['#4FC9F3', '#1C3A6A']
+                        data: [80, 20],
+                        backgroundColor: ['#8AEFD1', '#639787']
                     }],
                 },
                 options: {
@@ -65,5 +65,5 @@ var AmountChart = function () {
 
 // On document ready
 KTUtil.onDOMContentLoaded(function() {
-    AmountChart.init();
+    PayoutsPaidChart.init();
 });

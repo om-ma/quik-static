@@ -4,7 +4,7 @@
 var LiveOrdersBarChart = function () {    
     var initChart = function () {
         // Get all elements with the class 'live_orders_bar_chart'
-        var elements = document.getElementsByClassName("live_orders_bar_chart");
+        var elements = document.getElementsByClassName("payouts_paid_bar_chart");
 
         if (elements.length === 0) {
             return;
@@ -23,14 +23,14 @@ var LiveOrdersBarChart = function () {
                     datasets: [{
                         label: 'Dataset 1',
                         data: [30, 30, 20, 30, 20, 30, 40, 30, 10, 20], // First set of data (bottom stack)
-                        backgroundColor: '#4FC9F3',
+                        backgroundColor: '#639787',
                         borderColor: '#EFF2F5', // Border color
                         borderSkipped: false, // Ensure top border radius is applied
                         borderDash: [5, 5], // Dashed border
                     }, {
                         label: 'Dataset 2',
                         data: [20, 30, 40, 20, 10, 20, 10, 10, 50, 10], // Second set of data (top stack)
-                        backgroundColor: '#1C3A6A',
+                        backgroundColor: '#8AEFD1',
                         borderColor: '#EFF2F5', // Border color
                         borderRadius: { topLeft: borderRadiusValue, topRight: borderRadiusValue }, // Dynamic border radius
                         borderSkipped: false, // Ensure top border radius is applied

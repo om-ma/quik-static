@@ -239,6 +239,13 @@ table > thead > tr:nth-child(2) > th {
   background: #639787;
 }
 
+.bg-pending-primary {
+  background: #FFD363;
+}
+
+.bg-pending-secondary {
+  background: #B6953F;
+}
 
 /* Media Queries */
 
