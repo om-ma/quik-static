@@ -7607,10 +7607,7 @@ fieldset:disabled .btn {
 }
 .border-primary {
   --bs-border-opacity: 1;
-  border-color: rgba(
-    var(--bs-primary-rgb),
-    var(--bs-border-opacity)
-  ) !important;
+    border-color: var(--bs-primary) !important;
 }
 .border-secondary {
   --bs-border-opacity: 1;
@@ -26824,6 +26821,13 @@ fieldset:disabled .btn {
     min-height: 1000px !important;
   }
 }
+
+@media (min-width: 1600px) {
+  .flex-3xl-row {
+    flex-direction: row !important;
+  }
+}
+
 @media (min-width: 1200px) {
   .fs-1 {
     font-size: 1.75rem !important;
