@@ -283,22 +283,24 @@
                         </button>
                     </div>
                     <div class="d-none d-lg-block mt-6" >
-                        <div class="w-100 d-flex flex-column flex-lg-row gap-1 justify-content-lg-between">
-                            <label for="exampleFormControlInput1" class="form-label flex-shrink-0">Order Status</label>
-                            <select class="form-select form-select-outlined fs-7 w-lg-250px ms-auto" data-control="select2" data-close-on-select="false" data-placeholder="Select order status"  multiple="multiple">
-                                <option value="1">Delivered</option>
-                            </select>
+                        <div class="d-lg-flex gap-5" >
+                            <div class="w-100 d-flex flex-column gap-1">
+                                <label for="exampleFormControlInput1" class="form-label flex-shrink-0">Order Status</label>
+                                <select class="form-select form-select-outlined fs-7" data-control="select2" data-close-on-select="false" data-placeholder="Select order status"  multiple="multiple">
+                                    <option value="1">Delivered</option>
+                                </select>
+                            </div>
+                            <div class="w-100 d-flex flex-column gap-1">
+                                <label for="exampleFormControlInput1" class="form-label flex-shrink-0">Payment Method</label>
+                                <select class="form-select form-select-outlined ms-auto fs-7" data-control="select2" data-close-on-select="false" data-placeholder="Select payment method"  multiple="multiple">
+                                    <option value="1">Cash</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="my-4 w-100 d-flex flex-column flex-lg-row gap-1 justify-content-lg-between">
-                            <label for="exampleFormControlInput1" class="form-label flex-shrink-0">Payment Method</label>
-                            <select class="form-select form-select-outlined w-lg-250px ms-auto fs-7" data-control="select2" data-close-on-select="false" data-placeholder="Select payment method"  multiple="multiple">
-                                <option value="1">Cash</option>
-                            </select>
-                        </div>
-                        <div class="w-100 d-flex flex-column flex-lg-row gap-1 justify-content-lg-between" >
+                        <div class="mt-4 w-100 d-flex flex-column gap-1" >
                             <label for="" class="form-label">Date Range</label>
                             <div class="position-relative" >
-                                <input class="form-control w-lg-250px ms-auto fs-7" placeholder="Select date range" id="kt_datepicker_1"/>
+                                <input class="form-control ms-auto fs-7" placeholder="Select date range" id="kt_datepicker_1"/>
                                 <div class="position-absolute end-0 top-0" >
                                     <i class="ki-duotone ki-calendar-add fs-3 m-4">
                                         <span class="path1"></span>
@@ -313,54 +315,54 @@
                         </div>
                     </div>
                     <div class="mt-lg-6 d-flex flex-column gap-5" >
-                        <div class="bg-gray-100 d-flex align-items-center rounded-3 p-7" >
-                            <div class="d-flex flex-column flex-lg-row gap-4 gap-lg-0 w-100" >
+                        <div class="bg-gray-100 d-flex align-items-center rounded-3 p-7 p-lg-8" >
+                            <div class="d-flex flex-column flex-lg-row gap-4 w-100" >
                                <div class="d-lg-none" >
                                     <h2>Live Orders</h2>
                                </div>
-                                <div class="d-flex justify-content-center justify-content-lg-start" >
-                                    <div class="position-relative d-flex mx-auto flex-center h-150px w-150px">
-                                        <canvas width="200" height="200" class="kt_project_list_chart d-block border-box w-125px h-125px"></canvas>
+                                <div class="d-flex justify-content-center justify-content-lg-center" >
+                                    <div class="position-relative d-flex mx-auto flex-center w-125px h-125px w-lg-80px h-lg-80px">
+                                        <canvas width="200" height="200" class="kt_project_list_chart d-block border-box w-125px h-125px w-lg-80px h-lg-80px"></canvas>
                                         <h1 class="text-secondary position-absolute top-50 left-50 translate-middle-y fs-3hx fs-lg-1 fw-black" >0</h1>
                                     </div>
                                 </div>
-                                <div class="mt-5" >
+                                <div class="mt-5 mt-lg-0" >
                                     <h2 class="fw-bold d-none d-lg-block fs-3" >Live Orders</h2>
-                                    <div class="bg-white rounded-3 px-5 py-3 text-gray-700 mt-5 fw-semibold text-center" >No data to show.</div>
+                                    <div class="bg-white rounded-3 px-5 py-3 d-lg-inline-block text-gray-700 mt-5 mt-lg-2 fw-semibold text-center" >No data to show.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-100 d-flex align-items-center rounded-3 p-7" >
-                            <div class="d-flex flex-column flex-lg-row gap-4 gap-lg-0 w-100" >
+                        <div class="bg-gray-100 d-flex align-items-center rounded-3 p-7 p-lg-8" >
+                            <div class="d-flex flex-column flex-lg-row gap-4 w-100" >
                                <div class="d-lg-none" >
                                     <h2>Delayed Orders</h2>
                                </div>
-                                <div class="d-flex justify-content-center justify-content-lg-start" >
-                                    <div class="position-relative d-flex mx-auto flex-center h-150px w-150px">
-                                        <canvas width="200" height="200" class="kt_project_list_chart d-block border-box w-125px h-125px"></canvas>
+                                <div class="d-flex justify-content-center justify-content-lg-center" >
+                                    <div class="position-relative d-flex mx-auto flex-center w-125px h-125px w-lg-80px h-lg-80px">
+                                        <canvas width="200" height="200" class="kt_project_list_chart d-block border-box w-125px h-125px w-lg-80px h-lg-80px"></canvas>
                                         <h1 class="text-secondary position-absolute top-50 left-50 translate-middle-y fs-3hx fs-lg-1 fw-black" >0</h1>
                                     </div>
                                 </div>
-                                <div class="mt-5" >
+                                <div class="mt-5 mt-lg-0" >
                                     <h2 class="fw-bold d-none d-lg-block fs-3" >Delayed Orders</h2>
-                                    <div class="bg-white rounded-3 px-5 py-3 text-gray-700 mt-5 fw-semibold text-center" >No data to show.</div>
+                                    <div class="bg-white rounded-3 px-5 py-3 d-lg-inline-block text-gray-700 mt-5 mt-lg-2 fw-semibold text-center" >No data to show.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-100 d-flex align-items-center rounded-3 p-7" >
-                            <div class="d-flex flex-column flex-lg-row gap-4 gap-lg-0 w-100" >
+                        <div class="bg-gray-100 d-flex align-items-center rounded-3 p-7 p-lg-8" >
+                            <div class="d-flex flex-column flex-lg-row gap-4 w-100" >
                                <div class="d-lg-none" >
                                     <h2>Average Order Size</h2>
                                </div>
-                                <div class="d-flex justify-content-center justify-content-lg-start" >
-                                    <div class="position-relative d-flex mx-auto flex-center h-150px w-150px">
-                                        <canvas width="200" height="200" class="kt_project_list_chart d-block border-box w-125px h-125px"></canvas>
+                                <div class="d-flex justify-content-center justify-content-lg-center" >
+                                    <div class="position-relative d-flex mx-auto flex-center w-125px h-125px w-lg-80px h-lg-80px">
+                                        <canvas width="200" height="200" class="kt_project_list_chart d-block border-box w-125px h-125px w-lg-80px h-lg-80px"></canvas>
                                         <h1 class="text-secondary position-absolute top-50 left-50 translate-middle-y fs-3hx fs-lg-1 fw-black" >0</h1>
                                     </div>
                                 </div>
-                                <div class="mt-5" >
+                                <div class="mt-5 mt-lg-0" >
                                     <h2 class="fw-bold d-none d-lg-block fs-3" >Average Order Size</h2>
-                                    <div class="bg-white rounded-3 px-5 py-3 text-gray-700 mt-5 fw-semibold text-center" >No data to show.</div>
+                                    <div class="bg-white rounded-3 px-5 py-3 d-lg-inline-block text-gray-700 mt-5 mt-lg-2 fw-semibold text-center" >No data to show.</div>
                                 </div>
                             </div>
                         </div>

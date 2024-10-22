@@ -19,17 +19,17 @@ var LiveOrdersBarChart = function () {
             var config = {
                 type: 'bar', // Set to 'bar' for a bar chart
                 data: {
-                    labels: ['July 1', 'July 2', 'July 3', 'July 4', 'July 5', 'July 6', 'July 7', 'July 8', 'July 9', 'July 10'], // Labels for each column
+                    labels: ['July 1', 'July 2', 'July 3', 'July 4', 'July 5', 'July 6', 'July 7', 'July 8', 'July 9', 'July 10', 'July 11', "July 12"], // Labels for each column
                     datasets: [{
                         label: 'Dataset 1',
-                        data: [30, 30, 20, 30, 20, 30, 40, 30, 10, 20], // First set of data (bottom stack)
+                        data: [30, 30, 20, 30, 20, 30, 40, 30, 10, 20, 30, 30], // First set of data (bottom stack)
                         backgroundColor: '#639787',
                         borderColor: '#EFF2F5', // Border color
                         borderSkipped: false, // Ensure top border radius is applied
                         borderDash: [5, 5], // Dashed border
                     }, {
                         label: 'Dataset 2',
-                        data: [20, 30, 40, 20, 10, 20, 10, 10, 50, 10], // Second set of data (top stack)
+                        data: [20, 30, 40, 20, 10, 20, 10, 10, 50, 10, 20, 30], // Second set of data (top stack)
                         backgroundColor: '#8AEFD1',
                         borderColor: '#EFF2F5', // Border color
                         borderRadius: { topLeft: borderRadiusValue, topRight: borderRadiusValue }, // Dynamic border radius
