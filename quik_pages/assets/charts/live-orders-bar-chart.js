@@ -47,14 +47,14 @@ var LiveOrdersBarChart = function () {
                     datasets: [{
                         label: 'Dataset 1',
                         data: dataset1Data, // First set of data (bottom stack)
-                        backgroundColor: '#FFB5B5',
+                        backgroundColor: '#4fc9f3',
                         borderColor: '#EFF2F5',
                         borderSkipped: false,
                         borderDash: [5, 5],
                     }, {
                         label: 'Dataset 2',
                         data: dataset2Data, // Second set of data (top stack)
-                        backgroundColor: '#D48989',
+                        backgroundColor: '#1c3a6a',
                         borderColor: '#EFF2F5',
                         borderRadius: { topLeft: borderRadiusValue, topRight: borderRadiusValue },
                         borderSkipped: false,
