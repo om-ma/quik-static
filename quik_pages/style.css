@@ -247,6 +247,10 @@ table > thead > tr:nth-child(2) > th {
   background: #B6953F;
 }
 
+.overview-card {
+  margin-top: -50px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -265,6 +269,9 @@ table > thead > tr:nth-child(2) > th {
   .customer-section .customer-logo-container svg {
     width: 120px;
     height: 120px; 
+  }
+  .overview-card {
+    margin-top: 20px;
   }
 }
 
